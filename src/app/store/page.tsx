@@ -9,8 +9,8 @@ export default function store() {
 
   return (
     <div>
-      <div className="container bg-amber-500">
-        <h1>магазин</h1>
+      <div className="container mx-auto ">
+        <h1 className="text-center text-3xl font-bold">магазин</h1>
         <div>
           {magazine.map((item) => {
             return (
@@ -18,7 +18,7 @@ export default function store() {
                 <button
                   onClick={() => handleClick(item)}
                   value={item}
-                  className="btn"
+                  className="btn btn-primary m-2 w-1/6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   type="button"
                 >
                   {item}

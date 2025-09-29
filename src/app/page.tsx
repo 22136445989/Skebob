@@ -1,3 +1,3 @@
 export default function Home() {
-  return <>Стартовая страница</>;
+  return <div className="text-3xl">Стартовая страница</div>;
 }
