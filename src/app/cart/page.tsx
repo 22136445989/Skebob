@@ -3,7 +3,7 @@ export default function cart() {
   return (
     <div>
       <div className="text-center text-3xl">
-        <Link href="/store">Главная</Link>
+        <Link href="/store">Нажми для перехода в магазин</Link>
       </div>
       <h1>Корзина</h1>
       <button

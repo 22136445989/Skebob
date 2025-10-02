@@ -1,6 +1,8 @@
 "use client";
 import { ToastContainer, toast } from "react-toastify";
 import Link from "next/link";
+import Image from "next/image";
+import imagesCard from "../../../public/images.jpeg";
 export default function store() {
   const magazine = ["финики", "тыквенные семечки", "медовая вода", "скебоб"];
 
@@ -16,26 +18,10 @@ export default function store() {
           <Link href="/cart">Корзина</Link>
         </div>
         <div className="grid grid-cols-4 gap-4 mt-5">
-          <img
-            className="w-full h-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvOof9agtMsk3Ty0I1vzixA1w9omqg8fl9Q&s"
-            alt="store"
-          />
-          <img
-            className="w-full h-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvOof9agtMsk3Ty0I1vzixA1w9omqg8fl9Q&s"
-            alt="store"
-          />
-          <img
-            className="w-full h-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvOof9agtMsk3Ty0I1vzixA1w9omqg8fl9Q&s"
-            alt="store"
-          />
-          <img
-            className="w-full h-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvOof9agtMsk3Ty0I1vzixA1w9omqg8fl9Q&s"
-            alt="store"
-          />
+          <Image className="w-full h-full" src={imagesCard} alt="store" />
+          <Image className="w-full h-full" src={imagesCard} alt="store" />
+          <Image className="w-full h-full" src={imagesCard} alt="store" />
+          <Image className="w-full h-full" src={imagesCard} alt="store" />
           {magazine.map((item) => {
             return (
               <div key={item}>
